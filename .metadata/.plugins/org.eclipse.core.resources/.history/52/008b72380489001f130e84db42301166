@@ -1,0 +1,39 @@
+package testEntidades;
+
+import java.util.Date;
+import java.util.List;
+import model.TblUsuariocl2;
+import daoImplement.UsuarioImpl;
+
+public class testUsuario {
+
+	public static void main(String[] args) {
+		// INSTANCIAMOS
+		TblUsuariocl2 userEntity = new TblUsuariocl2();
+		UsuarioImpl userDao = new UsuarioImpl();
+
+		//REGISTRAR USUARIO ----------------------------------
+		userEntity.setUsuario("Ana");
+		userEntity.setPassword("159");
+		
+		userDao.RegistrarUsuario(userEntity);
+		
+		System.out.println("Dato registrado en la BD");
+		
+		//ACTUALIZAR USUARIO ----------------------------------
+		/*userEntity.setIdUsuario(1);
+		userEntity.setUsuario("Gerard");
+		userEntity.setPassword("123");
+		
+		userDao.ActualizarUsuario(userEntity);
+		
+		System.out.println("Dato actualizado en la BD");*/
+		
+		//ELIMINAR USUARIO ----------------------------------
+		
+		//LISTAR USUARIO ----------------------------------
+		
+		//BUSCAR USUARIO ----------------------------------
+	}
+
+}

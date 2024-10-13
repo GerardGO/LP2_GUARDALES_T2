@@ -1,0 +1,9 @@
+127.0.0.1 - - [12/Oct/2024:21:10:00 -0500] "GET / HTTP/1.1" 404 1002
+0:0:0:0:0:0:0:1 - - [12/Oct/2024:21:10:01 -0500] "GET /LP2_Guardales_Maven/menuPrincipal.jsp HTTP/1.1" 200 468
+0:0:0:0:0:0:0:1 - - [12/Oct/2024:21:10:01 -0500] "GET /favicon.ico HTTP/1.1" 404 1024
+0:0:0:0:0:0:0:1 - - [12/Oct/2024:21:10:25 -0500] "GET /LP2_Guardales_Maven/menuPrincipal.jsp HTTP/1.1" 200 466
+0:0:0:0:0:0:0:1 - - [12/Oct/2024:21:11:03 -0500] "GET /LP2_Guardales_Maven/menuPrincipal.jsp HTTP/1.1" 200 473
+0:0:0:0:0:0:0:1 - - [12/Oct/2024:21:12:37 -0500] "GET /LP2_Guardales_Maven/index.jsp HTTP/1.1" 200 495
+0:0:0:0:0:0:0:1 - - [12/Oct/2024:21:12:41 -0500] "POST /LP2_Guardales_Maven/ControladorUsuario HTTP/1.1" 200 473
+0:0:0:0:0:0:0:1 - - [12/Oct/2024:21:12:47 -0500] "GET /LP2_Guardales_Maven/index.jsp HTTP/1.1" 200 495
+0:0:0:0:0:0:0:1 - - [12/Oct/2024:21:12:52 -0500] "POST /LP2_Guardales_Maven/ControladorUsuario HTTP/1.1" 200 473

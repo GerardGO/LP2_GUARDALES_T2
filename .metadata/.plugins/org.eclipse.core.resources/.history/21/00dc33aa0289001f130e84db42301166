@@ -1,0 +1,59 @@
+package daoImplement;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import model.TblProveedorcl2;
+import interfaces.IProveedor;
+
+public class ProveedorImpl implements IProveedor{
+	
+	EntityManagerFactory emf=Persistence.createEntityManagerFactory("LP2_Guardales_Maven");
+	EntityManager em=emf.createEntityManager();
+
+	@Override
+	public void RegistrarProveedor(TblProveedorcl2 proveed) {
+		try{
+			em.getTransaction().begin();
+			
+			em.persist(proveed);
+			
+			em.getTransaction().commit();
+			
+	     }catch(RuntimeException ex){
+	    	ex.getMessage(); 
+	    	
+	     }finally{
+			em.close();
+	     }		
+		
+	} //FIN MÉTODO REGISTRAR ------------------------------------------------------------------------
+
+	@Override
+	public void ActualizarProveedor(TblProveedorcl2 proveed) {
+		
+		
+	} //FIN MÉTODO ACTUALIZAR ------------------------------------------------------------------------
+
+	@Override
+	public void EliminarProveedor(TblProveedorcl2 proveed) {
+		
+		
+	} //FIN MÉTODO ELIMINAR ------------------------------------------------------------------------
+
+	@Override
+	public List<TblProveedorcl2> ListarProveedor() {
+		
+		return null;
+	} //FIN MÉTODO LISTAR ------------------------------------------------------------------------
+
+	@Override
+	public TblProveedorcl2 BuscarProveedor(TblProveedorcl2 proveed) {
+		
+		return null;
+	} //FIN MÉTODO BUSCAR ------------------------------------------------------------------------
+
+}

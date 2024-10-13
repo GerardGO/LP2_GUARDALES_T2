@@ -1,0 +1,15 @@
+package testEntidades;
+
+import java.util.Date;
+import java.util.List;
+import model.TblProveedorcl2;
+import daoImplement.ProveedorImpl;
+
+public class testProveedor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package testEntidades;
+
+import java.util.Date;
+import java.util.List;
+import model.TblUsuariocl2;
+import daoImplement.UsuarioImpl;
+
+public class testUsuario {
+
+	public static void main(String[] args) {
+		// INSTANCIAMOS
+		
+		TblUsuariocl2 userEntity = new TblUsuariocl2();
+		UsuarioImpl userDao = new UsuarioImpl();
+
+	}
+
+}

@@ -1,0 +1,59 @@
+package daoImplement;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import model.TblUsuariocl2;
+import interfaces.IUsuario;
+
+public class UsuarioImpl implements IUsuario{
+
+	EntityManagerFactory emf=Persistence.createEntityManagerFactory("LP2_Guardales_Maven");
+	EntityManager em=emf.createEntityManager();
+	
+	@Override
+	public void RegistrarUsuario(TblUsuariocl2 user) {
+		try{
+			em.getTransaction().begin();
+			
+			em.persist(user);
+			
+			em.getTransaction().commit();
+			
+	     }catch(RuntimeException ex){
+	    	ex.getMessage(); 
+	    	
+	     }finally{
+			em.close();
+	     }
+	} //FIN MÉTODO REGISTRAR ------------------------------------------------------------------------
+
+	
+	@Override
+	public void ActualizarUsuario(TblUsuariocl2 user) {
+		
+		
+	} //FIN MÉTODO ACTUALIZAR ------------------------------------------------------------------------
+
+	@Override
+	public void EliminarUsuario(TblUsuariocl2 user) {
+		
+		
+	} //FIN MÉTODO ELIMINAR ------------------------------------------------------------------------
+
+	@Override
+	public List<TblUsuariocl2> ListarUsuario() {
+		
+		return null;
+	} //FIN MÉTODO LISTAR ------------------------------------------------------------------------
+
+	@Override
+	public TblUsuariocl2 BuscarUsuario(TblUsuariocl2 user) {
+		
+		return null;
+	} //FIN MÉTODO BUSCAR ------------------------------------------------------------------------
+
+}

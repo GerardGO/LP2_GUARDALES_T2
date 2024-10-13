@@ -1,0 +1,69 @@
+package testEntidades;
+
+import java.util.Date;
+import java.util.List;
+import model.TblProveedorcl2;
+import daoImplement.ProveedorImpl;
+
+public class testProveedor {
+
+	public static void main(String[] args) {
+		// INSTANCIAMOS
+		TblProveedorcl2 provEntity = new TblProveedorcl2();
+		ProveedorImpl provDao = new ProveedorImpl();
+
+		//idProveedor	nomProveedor	rucProveedor	rSocialProveedor	emailProveedor	fecIngresoProveedor
+		//REGISTRAR USUARIO ----------------------------------
+		/*provEntity.setNomProveedor("Prov 7");
+		provEntity.setRucProveedor("10525252777");
+		provEntity.setRSocialProveedor("Prov7 SAC");
+		provEntity.setEmailProveedor("prov7@gmail.com");
+			Date fecha=new Date();
+			Date fechasql=new Date(fecha.getTime());
+		provEntity.setFecIngresoProveedor(fechasql);
+		
+		provDao.RegistrarProveedor(provEntity);
+		
+		System.out.println("Dato registrado en la BD");*/
+		
+		//ACTUALIZAR USUARIO ----------------------------------
+		/*provEntity.setIdProveedor(6);
+		provEntity.setNomProveedor("Prov 50");
+		provEntity.setRucProveedor("10525252000");
+		provEntity.setRSocialProveedor("Prov50 SAC");
+		provEntity.setEmailProveedor("prov50@gmail.com");
+			Date fecha=new Date();
+			Date fechasql=new Date(fecha.getTime());
+		provEntity.setFecIngresoProveedor(fechasql);
+		
+		provDao.ActualizarProveedor(provEntity);
+		
+		System.out.println("Dato actualizado en la BD");*/
+		
+		//ELIMINAR USUARIO ----------------------------------
+		/*userEntity.setIdUsuario(6);
+		
+		userDao.EliminarUsuario(userEntity);
+		
+		System.out.println("Dato eliminado de la BD");*/
+		
+		//LISTAR USUARIO ----------------------------------
+		/*List<TblUsuariocl2> listado = userDao.ListarUsuario();
+		for(TblUsuariocl2 lis:listado){
+			System.out.println("Id \t"+lis.getIdUsuario()+"\n"+
+								"Usuario "+lis.getUsuario()+"\n"+
+								"Clave \t"+lis.getPassword()+"\n \n");
+		}*/
+		
+		//BUSCAR USUARIO ----------------------------------
+		/*userEntity.setIdUsuario(2);
+		
+		TblUsuariocl2 us = userDao.BuscarUsuario(userEntity);
+		
+		System.out.println("Id \t"+us.getIdUsuario()+"\n"+
+				"Usuario "+us.getUsuario()+"\n"+
+				"Clave \t"+us.getPassword()+"\n \n");*/
+		
+	}
+
+}

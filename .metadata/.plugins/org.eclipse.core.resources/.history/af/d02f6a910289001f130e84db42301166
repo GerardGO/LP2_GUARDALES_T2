@@ -1,0 +1,44 @@
+package daoImplement;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import model.TblProveedorcl2;
+import interfaces.IProveedor;
+
+public class ProveedorImpl implements IProveedor{
+
+	@Override
+	public void RegistrarProveedor(TblProveedorcl2 proveed) {
+		
+		
+	}
+
+	@Override
+	public void ActualizarProveedor(TblProveedorcl2 proveed) {
+		
+		
+	}
+
+	@Override
+	public void EliminarProveedor(TblProveedorcl2 proveed) {
+		
+		
+	}
+
+	@Override
+	public List<TblProveedorcl2> ListarProveedor() {
+		
+		return null;
+	}
+
+	@Override
+	public TblProveedorcl2 BuscarProveedor(TblProveedorcl2 proveed) {
+		
+		return null;
+	}
+
+}

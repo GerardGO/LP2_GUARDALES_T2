@@ -1,0 +1,15 @@
+package testEntidades;
+
+import java.util.Date;
+import java.util.List;
+import model.TblUsuariocl2;
+import daoImplement.UsuarioImpl;
+
+public class testUsuario {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
